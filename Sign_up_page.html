@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: cornsilk;
+            text-shadow: white;
+            text-shadow: #bc1212;
+        }
+
+        body {
+            background-color: #191e2f;
+            padding: 50px 0;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            display: flex;
+        }
+
+        label {
+            color: white;
+        }
+
+        .instructions {
+            color: white;
+            text-align: justify;
+            font-family: sans-serif;
+            font-size: 15px;
+            margin: 1px;
+            text-decoration: solid;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="signup">
+        <h1>CREATE NEW ACCOUNT</h1>
+        <label for="name">Name :</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name"><br>
+        <label for="email">Email :</label>
+        <input type="text" id="email" name="email" placeholder="Enter your email"><br>
+        <label for="no">Contact :</label>
+        <input type="text" id="no" name="contact" placeholder="Enter your phone number"><br>
+        <label for="pw">Create Password :</label>
+        <input type="text" id="pw" name="pw" placeholder="Create a password"><br>
+        <label for="pwc">Confirm Password :</label>
+        <input type="text" id="pwc" name="pwc" placeholder="must be same as previous"><br><br><br>
+
+        <div class="instructions">
+            <p><b>**Instructions:</b> Password Must contain:</p>
+            <ol>
+                <li>At least 8 characters</li>
+                <li>A special character(@,$,&,etc...)</li>
+                <li>An integer (1,2,3,etc...)</li>
+                <li>Uppercase and lowercase</li>
+            </ol>
+        </div>
+    </div>
+</body>
+
+</html>
