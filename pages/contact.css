@@ -32,50 +32,6 @@ body.dark {
   --search-bar: #242526;
 }
 
-.signup{
-  position: fixed;
-  right: 20px;
-  background-color:indigo;
-  width: 150px;
-  height: 50px;
-  align-content: center;
-  border-radius: 12px;
-  border-style: solid;
-  border-width: 1px 1px 1px 1px;
-  padding: 12px 24px 12px 24px;
-  color: #ffffff;
-  font-family: sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  text-transform: none;
-  text-decoration: none;
-  line-height: 24px;
-  
-}
-
-
-.signup a{
-  
-
-  border: 0;
-  font-family: inherit;
-  font-size: 100%;
-  font-style: inherit;
-  font-weight: inherit;
-  margin: 0;
-  outline: 0;
-  padding: 0;
-  vertical-align: baseline;
-  
-  
-}
-
-.signup:hover{
-  background-color: darkorchid;
-}
-
-
-
 
 /* Navbar container styling */
 nav {
@@ -152,7 +108,7 @@ nav .navbar .links li a {
 /* Navbar arrow styling */
 nav .navbar .links li .arrow {
   height: 100%;
-  width: 40px;
+  width: 22px;
   line-height: 70px;
   text-align: center;
   display: inline-block;
@@ -179,11 +135,11 @@ nav .navbar .links li:hover .js-sub-menu {
   display: block;
 }
 
-.sub-menu li{
+.sub-menu li:hover {
+  background: black;
   color: #fff;
   border-radius: 0.5rem;
 }
-
 
 /* Navbar sub-menu list items */
 .navbar .links li .sub-menu li {
@@ -558,106 +514,6 @@ a {
 /* nav header end  */
 
 
-/***------------------- Hero----------------------------------- ***/
-
-.content {
-  max-width:  800px;
-  margin: 0 auto;
-  padding: 0 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-}
-
-.hero {
-  position: relative;
-  background: #37caff;
-  color: white;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.hero h2 {
-  position: relative;
-  z-index: 1;
-  font-size: 4.5rem;
-  margin: 0 0 10px;
-  line-height: 1;
-  color: rgba(255, 255, 255, 0.9);
-}
-
-.hero p {
-  position: relative;
-  z-index: 1;
-  font-size: 1.1rem;
-  color: rgba(255, 255, 255, 0.5);
-  line-height: 1.4;
-}
-
-/*------------- waves style---------- */
-
-.waves {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 300px;
-  background-color: var(--body-color);
-  box-shadow: inset 0 0 50px rgba(19, 58, 69, 0.5);
-  transition: 500ms;
-}
-
-.waves::before,
-.waves::after {
-  content: '';
-  position: absolute;
-  width: 300vw;
-  height: 300vw;
-  top: -65vw;
-  left: 50%;
-  transform: translate(-50%, -75%);
-}
-
-.waves::before {
-  border-radius: 44%;
-  background: rgba(12, 164, 235, 0.892);
-  animation: waves 8s linear infinite;
-}
-
-.waves::after {
-  border-radius: 44%;
-  background: rgba(25, 150, 239, 0.5);
-  animation: waves 15s linear infinite;
-}
-
-@keyframes waves {
-  0% {
-    transform: translate(-50%, -85%) rotate(0deg);
-  }
-  
-  100% {
-    transform: translate(-50%, -85%) rotate(360deg);
-  }
-
-
-}
-
-
-body.dark .hero{
-  background-color: var(--body-color);
-}
-body.dark .waves    {
-  background: var(--body-color);
-
-
-}
-/*--------------------------------------------------- hero end--------------------- */
-
-
 
 
 /* conttent */
@@ -691,11 +547,6 @@ footer {
   
 }
 
-.footer-card li{
-  list-style: square;
-  padding: 3px 0px;
-}
-
 .social-icon{
   display: flex;
   justify-content: center;
@@ -720,63 +571,47 @@ body.dark footer{
     flex-wrap: wrap;
   }
 
-  .signup{
-    right: 25%;
-  }
-
 }
-
-
 
 
 /* ------------------------------ form styling ------------------ */
 
 .contact{
-  border: 1px solid black;
- margin-top: 200px;
- display: flex;
- justify-content: center;
- align-items: center;
+    border: 1px solid black;
+   margin-top: 200px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
-form{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px ; 
-  margin-left: 800px;   
+ form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px ; 
+    margin-left: 800px;   
 }
 
 
 form input,
 form textarea{
-  width: 600px;
-  border: 0;
-  margin: 15px auto 0;
-  padding: 20px;
-  background-color: #f5f5f5;
-  font-size: 16px;
-  border-radius: 10px;
+    width: 600px;
+    border: 0;
+    margin: 15px auto 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+    font-size: 16px;
+    border-radius: 10px;
 }
 form button {
-  border: 0;
-  outline: none;
-  margin: 20px auto 0;
-  width: 150px;
-  padding: 10px;
-  background: red;
-  color: white;
-  font-size: 18px;
-  cursor: pointer;
-  border-radius: 30px;
-}
-
-.copyright{
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  font-size: 12px;
-  font-weight: 100;
-  padding: 10px 0px;
-}
+    border: 0;
+    outline: none;
+    margin: 20px auto 0;
+    width: 150px;
+    padding: 10px;
+    background: red;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 30px;
+  }
