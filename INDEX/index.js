@@ -69,7 +69,7 @@ menuOpenBtn.onclick = function () { //clicking on menu open button moves side ba
     navLinks.style.left = "0";
 }
 menuCloseBtn.onclick = function () {
-    navLinks.style.left = "100%";
+    navLinks.style.left = "-100%"; //clicking on the 
 }
 
 
