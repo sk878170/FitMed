@@ -2,6 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
     let navbar = document.querySelector(".navbar");
     let searchBox = document.querySelector(".search-box i");
     let input = document.querySelector("#input");
+
+    // craetes a div element for searching
     let suggestionBox = document.createElement('div');
     suggestionBox.classList.add('suggestion-box');
     document.body.appendChild(suggestionBox);
@@ -22,15 +24,15 @@ document.addEventListener("DOMContentLoaded", () => {
     searchBox.addEventListener("click", () => {
         navbar.classList.toggle("showInput");
         if (navbar.classList.contains("showInput")) {
-            searchBox.classList.replace("bx-search", "bx-x");
+            searchBox.classList.replace("bx-search", "bx-x"); //it replaces search icon with close icon
             input.focus();
         } else {
-            searchBox.classList.replace("bx-x", "bx-search");
+            searchBox.classList.replace("bx-x", "bx-search"); //replaces back to search icon
             suggestionBox.style.display = 'none';
         }
     });
 
-    // Show suggestions on input
+    // takes user input, convert into lowercase and filter items based on input
     input.addEventListener("input", () => {
         let value = input.value.toLowerCase();
         suggestionBox.innerHTML = '';
@@ -63,11 +65,11 @@ document.addEventListener("DOMContentLoaded", () => {
 let navLinks = document.querySelector(".nav-links");
 let menuOpenBtn = document.querySelector(".navbar .bx-menu");
 let menuCloseBtn = document.querySelector(".nav-links .bx-x");
-menuOpenBtn.onclick = function () {
+menuOpenBtn.onclick = function () { //clicking on menu open button moves side bar into view
     navLinks.style.left = "0";
 }
 menuCloseBtn.onclick = function () {
-    navLinks.style.left = "-100%";
+    navLinks.style.left = "100%";
 }
 
 
