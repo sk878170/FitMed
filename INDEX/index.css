@@ -663,7 +663,7 @@ body.dark .waves    {
 /* conttent */
 
 /* --------------footer -------------- */
-footer {
+.footer-container {
 
   width: 100%;
   background-color: var(--nav-color);
@@ -673,14 +673,13 @@ footer {
   /* Adjust padding as needed */
   padding: 50px 50px 50px 50px;
   margin-top: 900px;
-
+  
   z-index: 100;
   bottom: 0;
   
-
+  
 }
 .footer-card{
-  border: 1px solid black;
   width: 100vh;
   margin: 20px;
   display: flex;
@@ -703,7 +702,6 @@ footer {
   margin-left: 50px;
   
   font-size: 40px;
-  border: 1px solid black;
   gap: 70px;
 }
 body.dark footer{
@@ -719,11 +717,15 @@ body.dark footer{
     display: flex;
     flex-wrap: wrap;
   }
-
+  
   .signup{
-    right: 25%;
+    right: 20%;
   }
 
+  .copyright{
+    width: 100%;
+  }
+  
 }
 
 
@@ -733,8 +735,8 @@ body.dark footer{
 
 .contact{
   border: 1px solid black;
- margin-top: 200px;
- display: flex;
+  margin-top: 200px;
+  display: flex;
  justify-content: center;
  align-items: center;
 }
@@ -772,11 +774,15 @@ form button {
 }
 
 .copyright{
-  position: relative;
-  bottom: 0;
-  width: 100%;
+  margin: 0;
+  font-weight: inherit;
+  font-size: 0.750rem;
   text-align: center;
-  font-size: 12px;
-  font-weight: 100;
-  padding: 10px 0px;
+  bottom: 0;
+  background-color: var(--nav-color);
+  color: white;
+
+
 }
+
+
