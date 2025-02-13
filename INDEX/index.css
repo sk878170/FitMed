@@ -35,7 +35,8 @@ body.dark {
 .signup{
   position: fixed;
   right: 20px;
-  background-color:indigo;
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(111,88,214,1) 26%, rgba(161,82,176,1) 53%, rgba(198,77,148,1) 67%, rgba(252,70,107,1) 100%);
   width: 150px;
   height: 50px;
   align-content: center;
@@ -58,7 +59,7 @@ body.dark {
   
 
   border: 0;
-  font-family: inherit;
+  font-family: monospace;
   font-size: 100%;
   font-style: inherit;
   font-weight: inherit;
@@ -66,6 +67,7 @@ body.dark {
   outline: 0;
   padding: 0;
   vertical-align: baseline;
+  
   
   
 }
@@ -607,7 +609,6 @@ a {
   right: 0;
   height: 300px;
   background-color: var(--body-color);
-  box-shadow: inset 0 0 50px rgba(19, 58, 69, 0.5);
   transition: 500ms;
 }
 
@@ -680,7 +681,7 @@ body.dark .waves    {
   
 }
 .footer-card{
-  width: 100vh;
+  width: 90vh;
   margin: 20px;
   display: flex;
   justify-content: center;

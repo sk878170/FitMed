@@ -1,17 +1,25 @@
-.container, .container2{
+body,html{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+
+.contact-container, .container2{
     position: relative;
     padding: 30px;
     margin: 50px auto;
     border-radius: 10px;
     box-shadow: 0px 1px 1px 1px black;
     text-align: center;
-
+    
 }
 
 .container2{
     display: flex;
     
 }
+
 
 
 .heading h1 {
@@ -90,10 +98,7 @@
 
 }
 
-.icon:hover{
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
-    color: whitesmoke;
-}
+
 
 .container2 p{
     font-size: 18px;
@@ -106,7 +111,7 @@
 }
 
 @media (max-width: 768px) {
-    .container {
+    .contact-container {
         width: 90%;
         padding: 20px;
         box-shadow: 0px 1px 1px 1px black;
@@ -126,7 +131,7 @@
 
 
 
-@keyframes waveBounce {
+/* @keyframes waveBounce {
     0% {
         transform: translateY(-20px) scale(0.8);
         opacity: 0;
@@ -151,7 +156,7 @@
     0%, 100% { opacity: 1; }
     40% { opacity: 0.6; }
     80% { opacity: 0.8; }
-}
+} */
 
 
 
