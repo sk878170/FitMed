@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.about_container{
+    justify-content: center;
+}
+
+.about_container h1{
+    font-size: 150px;
+    text-align: center;
+    font-family: fantasy;
+    padding-bottom: 20px;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(121,9,103,1) 40%, rgba(0,212,255,1) 100%);
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    border: 10px solid black;
+    border-radius: 10%;
+    margin-top: 10%;
+}
+
+.intro{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    padding-top: 20px;
+
+}
+
+.box{
+    align-items: center;
+    width: 100%;
+}
+
+.box img{
+    width: 300px;
+    height: 300px;
+}
+
+
+@media (max-width:800px) {
+    .intro{
+        display: block;
+        margin: 20px;
+    }
+
+    .box{
+        padding: 10px;
+    }
+    
+}
