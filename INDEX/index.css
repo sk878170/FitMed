@@ -32,18 +32,16 @@ body.dark {
   --search-bar: #242526;
 }
 
+
+.signup {background-image: linear-gradient(to right, #2BC0E4 0%, #EAECC6  51%, #2BC0E4  100%)}
+
 .signup{
-  position: fixed;
-  right: 20px;
-  background: rgb(63,94,251);
-  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(111,88,214,1) 26%, rgba(161,82,176,1) 53%, rgba(198,77,148,1) 67%, rgba(252,70,107,1) 100%);
-  width: 150px;
-  height: 50px;
+ 
   align-content: center;
   border-radius: 12px;
   border-style: solid;
   border-width: 1px 1px 1px 1px;
-  padding: 12px 24px 12px 24px;
+  padding: 12px 24px;
   color: #ffffff;
   font-family: sans-serif;
   font-weight: 400;
@@ -51,13 +49,23 @@ body.dark {
   text-transform: none;
   text-decoration: none;
   line-height: 24px;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  right: 25px;
+  position: fixed;
   
 }
 
+ .signup:hover {
+   background-position: right center; 
+   text-decoration: none;
+ } 
+
+
+
 
 .signup a{
-  
-
   border: 0;
   font-family: monospace;
   font-size: 100%;
@@ -67,14 +75,8 @@ body.dark {
   outline: 0;
   padding: 0;
   vertical-align: baseline;
-  
-  
-  
 }
 
-.signup:hover{
-  background-color: darkorchid;
-}
 
 
 
