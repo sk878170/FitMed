@@ -1,0 +1,13 @@
+.container-pricing{
+    margin: 10% 5%;
+  }
+
+  .premium{
+    /* background-color: #FDBD01;
+    border-color: #FDBD01;
+    border-width: 2px; */
+  }
+
+  .premium .card-header{
+    background-color: #FFE878;
+  }
