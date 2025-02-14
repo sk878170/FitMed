@@ -1,13 +1,26 @@
-.container-pricing{
-    margin: 10% 5%;
-  }
+* {
+  margin: 0;
+  padding: 0;
+}
 
-  .premium{
-    /* background-color: #FDBD01;
-    border-color: #FDBD01;
-    border-width: 2px; */
-  }
+body {
+  height: 100px;
+}
 
-  .premium .card-header{
-    background-color: #FFE878;
-  }
+.container-pricing {
+  margin: 10% 5%;
+  min-height: 900px;
+}
+.premium .card-header {
+  background-color: #ffe878;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+@media (max-width: 800px) {
+.col {
+  margin-top: 10%;
+}
+}

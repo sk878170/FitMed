@@ -1,24 +1,28 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
 
 .about_container{
     justify-content: center;
+ 
 }
 
+
+
 .about_container h1{
-    font-size: 150px;
     text-align: center;
+    font-size: 6rem;
     font-family: fantasy;
-    padding-bottom: 20px;
-    background: rgb(2,0,36);
-    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(121,9,103,1) 40%, rgba(0,212,255,1) 100%);
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    text-shadow: 5px 5px  black;
+    border: 5px solid black;
     color: white;
-    text-shadow: 3px 3px 3px black;
-    border: 10px solid black;
-    border-radius: 10%;
+    border-radius: 25%;
     margin-top: 10%;
+    width: 50%;
+    margin-left: 25%;
+    
 }
 
 .intro{
