@@ -19,7 +19,7 @@
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--body-color);
   /* background-image: url(abstract-digital-grid-black-background.jpg); */
 }
@@ -109,11 +109,21 @@ nav .navbar {
 }
 
 /* Navbar logo link */
-.navbar .logo a {
-  font-size: 30px;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
+
+.logo img {
+  height: 130px;
+  width: 200px;
+  position: absolute;
+  top: -35px;
+  left: 50px;
+  transition: transform 0.1s fade-out 1s, opacity 0.10s fade-out 1s;
+}
+
+.logo img:hover {
+  transform: scale(1.1);
+  /* Slightly enlarges the logo */
+  opacity: 0.8;
+  /* Reduces opacity slightly */
 }
 
 /* Navbar links container */
@@ -665,25 +675,37 @@ body.dark .waves    {
 
 
 
-/* conttent */
+/* content */
 
 /* --------------footer -------------- */
-.footer-container {
+footer{
 
-  width: 100%;
   background-color: var(--nav-color);
   color: white;
+}
+
+.footer-container {
+
+  height: 200px;
+  width: 100%;
   display: flex;
-  height: auto;
   /* Adjust padding as needed */
   padding: 50px 50px 50px 50px;
   margin-top: 900px;
-  
   z-index: 100;
   bottom: 0;
-  
-  
 }
+
+.social-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  gap: 150px;
+  margin: 20px 0 ;
+}
+
+
 .footer-card{
   width: 90vh;
   margin: 20px;
@@ -700,25 +722,16 @@ body.dark .waves    {
   padding: 3px 0px;
 }
 
-.social-icon{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 50px;
-  
-  font-size: 40px;
-  gap: 70px;
-}
+
 body.dark footer{
   background-color: var(--body-color);
   color: white;
 }
+
+/* RESPONSIVENESS */
+
 @media (max-width: 800px){
   footer{
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .social-icon{
     display: flex;
     flex-wrap: wrap;
   }
@@ -786,6 +799,7 @@ form button {
   bottom: 0;
   background-color: var(--nav-color);
   color: white;
+  padding: 0 0 10px 0;
 
 
 }
