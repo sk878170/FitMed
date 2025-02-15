@@ -1,7 +1,6 @@
 body,html{
     margin: 0;
     padding: 0;
-    height: 100vh;
 }
 
 
@@ -23,9 +22,20 @@ body,html{
 
 
 .heading h1 {
-    font-size: 36px;
-    color: cyan;
+    font-size: 150px;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
     border-radius: 50%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 3s ease-in-out, -webkit-text-fill-color 3s ease-in-out;
+}
+
+.heading h1:hover{
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .subheading h3 {
     font-size: 15px;
