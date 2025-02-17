@@ -13,6 +13,9 @@
     font-weight: 900;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 20px;
+    background-color: rgb(137, 129, 129);
+    border-radius: 5%;
+    margin: 10px;
 }
 
 .theory p{

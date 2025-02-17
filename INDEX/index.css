@@ -743,6 +743,11 @@ body.dark footer{
   .copyright{
     width: 100%;
   }
+
+  .social-icon{
+    gap: 100px;
+    margin:10% 20%;
+  }
   
 }
 
@@ -803,5 +808,3 @@ form button {
 
 
 }
-
-

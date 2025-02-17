@@ -3,9 +3,6 @@
   padding: 0;
 }
 
-body {
-  height: 100px;
-}
 
 .container-pricing {
   margin: 10% 5%;
@@ -17,6 +14,30 @@ body {
 
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.heading{
+  text-align: center;
+  margin-top: 10%;
+}
+
+.heading h1 {
+  font-weight: 500;
+  font-size: 175px;
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 3s ease-in-out, -webkit-text-fill-color 3s ease-in-out;
+  font-family: "Libre Baskerville", serif;
+
+}
+
+.heading h1:hover{
+  background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media (max-width: 800px) {

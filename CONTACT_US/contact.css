@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Stalinist+One&display=swap');
+
+
 body,html{
     margin: 0;
     padding: 0;
@@ -19,16 +22,18 @@ body,html{
     
 }
 
-
+.heading{
+    text-align: center;
+}
 
 .heading h1 {
     font-size: 150px;
     background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
-    border-radius: 50%;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: 3s ease-in-out, -webkit-text-fill-color 3s ease-in-out;
+    font-family: "Libre Baskerville", serif;
 }
 
 .heading h1:hover{
@@ -37,6 +42,8 @@ body,html{
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+
 .subheading h3 {
     font-size: 15px;
     margin-top: 10px;
