@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Stalinist+One&display=swap');
-
+@import "bootstrap-icons/font/bootstrap-icons.css";
 
 body,html{
     margin: 0;
@@ -28,16 +28,15 @@ body,html{
 
 .heading h1 {
     font-size: 150px;
-    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition: 3s ease-in-out, -webkit-text-fill-color 3s ease-in-out;
     font-family: "Libre Baskerville", serif;
 }
 
 .heading h1:hover{
-    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -51,9 +50,9 @@ body,html{
 }
 
 .subheading h2{
-    font-size: 30px;
+    font-size: 75px;
     margin-top: 10px;
-    color: #999;
+    color: #804a4a;
 
 }
 
@@ -68,6 +67,7 @@ body,html{
     display: block;
     margin: 10px 0 5px;
     color: #333;
+    
 }
 
 .details input,
@@ -85,24 +85,50 @@ body,html{
 }
 
 .submit {
-    text-align: center;
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
 }
 
-.submit button {
+
+.submit button {background-image: linear-gradient(to right, #d53369 0%, #cbad6d  51%, #d53369  100%)}
+
+#submit {
+    margin: 10px auto; /* Center the button horizontally */
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+ }
+
+#submit:hover {
+
+    cursor: pointer;
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+ }
+
+
+/* #submit {
     background: #ff6600;
     color: white;
     padding: 12px 24px;
     font-size: 18px;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
     transition: 0.3s;
-}
+} */
 
-.submit button:hover {
-    background: #cc5500;
-}
+
 
 .bi bi-envelope{
     font-size: 24px;

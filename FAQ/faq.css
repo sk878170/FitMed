@@ -44,6 +44,7 @@
     transition-timing-function: ease;
     transition-delay: 0s;
     transition-property: max-height;
+    text-align: justify;
   }
   
   .faq_3 .faq.active .openimg {
@@ -75,7 +76,8 @@
   
   .faq_3 .responsive-container-block.faqheading-bg {
     height: 500px;
-    background-color: #03a9f4;
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
     flex-direction: column;
     text-align: center;
     
@@ -87,7 +89,7 @@
     background-image: linear-gradient( 135deg, #81FFEF 10%, #F067B4 100%);
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;  
     font-size: 100px;
     line-height: 150px;
     font-weight: 800;

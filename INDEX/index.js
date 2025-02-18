@@ -160,3 +160,50 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+// form validation for contact us page
+
+function validateForm() {
+    let firstName = document.getElementById("firstName");
+    let lastName = document.getElementById("lastName");
+    let mobileNumber = document.getElementById("mobileNumber");
+    let email = document.getElementById("email");
+
+    let nameRegex = /^[A-Za-z]{2,}$/; // Only letters, min 2 characters
+    let mobileRegex = /^[6-9]\d{9}$/; // Starts with 6-9, total 10 digits
+    let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/; // Valid email pattern
+
+    let isValid = true;
+
+    if (!nameRegex.test(firstName.value.trim())) {
+        firstName.style.border = "2px solid red";
+        isValid = false;
+    } else {
+        firstName.style.border = "2px solid green";
+    }
+
+    if (!nameRegex.test(lastName.value.trim())) {
+        lastName.style.border = "2px solid red";
+        isValid = false;
+    } else {
+        lastName.style.border = "2px solid green";
+    }
+
+    if (!mobileRegex.test(mobileNumber.value.trim())) {
+        mobileNumber.style.border = "2px solid red";
+        isValid = false;
+    } else {
+        mobileNumber.style.border = "2px solid green";
+    }
+
+    if (!emailRegex.test(email.value.trim())) {
+        email.style.border = "2px solid red";
+        isValid = false;
+    } else {
+        email.style.border = "2px solid black";
+    }
+
+    return isValid;
+}
+
+
