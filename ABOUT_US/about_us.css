@@ -16,13 +16,23 @@
     background-color: rgb(137, 129, 129);
     border-radius: 5%;
     margin: 10px;
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+    transform: translateX(-100px); 
+    animation: slideIn 1s ease-in-out forwards; /* Apply animation */
+}
+
+.theory h2:hover {
+    background-color: rgb(100, 92, 92); /* Slightly darker shade on hover */
+    color: white;
 }
 
 .theory p{
+    transform: translateX(-50px); 
+    animation: slideOut 1s ease-in-out forwards; /* Apply animation */
     font-size: 24px;
     padding: 0 5%;
     text-align: justify;
-
+    
 }
 
 .about_container{
@@ -43,6 +53,7 @@
     border-radius: 25%;
     margin: 10% 25%;
     width: 50%;
+    animation: fadeIn 2s ease-in-out forwards; /* Apply animation */
 }
 
 .intro{
@@ -97,4 +108,37 @@
         padding: 10px;
     }
     
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100px); /* Start off-screen left */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Move to normal position */
+    }
+}
+
+@keyframes slideOut {
+    from {
+        opacity: 0;
+        transform: translateX(100px); /* Start off-screen right */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Move to normal position */
+    }
 }
