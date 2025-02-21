@@ -207,3 +207,9 @@ function validateForm() {
 }
 
 
+// opens the signup page 
+
+function openSignup(){
+    window.location.href = "../SIGN_UP/Sign_up_page.html";
+}
+
