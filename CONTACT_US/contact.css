@@ -24,23 +24,28 @@ body,html{
 
 .heading{
     text-align: center;
+    margin-top: 10%;
+
 }
 
 .heading h1 {
+    font-weight: 500;
     font-size: 150px;
-    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: "Libre Baskerville", serif;
-}
-
-.heading h1:hover{
     background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-}
+    transition: 3s ease-in-out, -webkit-text-fill-color 3s ease-in-out;
+    font-family: "Libre Baskerville", serif;
+  
+  }
+
+  .heading h1:hover{
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
 
 .subheading h3 {
@@ -91,6 +96,11 @@ body,html{
     align-items: center;
     text-align: center;
     width: 100%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.submit:active{
+    transform: scale(1.25);
 }
 
 
