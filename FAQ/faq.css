@@ -90,7 +90,7 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;   */
-    color: blanchedalmond;
+    color:azure;
     font-size: 100px;
     line-height: 150px;
     font-weight: 800;
@@ -280,7 +280,7 @@
     .faq_3 .text-blk.faq-heading {
       font-size: 40px;
       line-height: 42px;
-      margin-top: 0px;
+      margin-top: 10px;
       margin-right: 0px;
       margin-bottom: 24px;
       margin-left: 0px;
