@@ -1,33 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FitMed Login Page</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
+      @import url("https://fonts.googleapis.com/css2?family=Boldonse&family=Rancho&family=Sigmar&family=Stalinist+One&display=swap");
 
-        body{
-            font-family:Arial, Helvetica, sans-serif;
-            
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #2c2f33;
+        color: white;
+        padding: 20px;
+      }
+      .login-container {
+        background-color: #1c1e21;
+        padding: 3rem;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        max-width: 400px;
+        width: 100%;
+      }
+      .btn-primary {
+        background-color: #007bff;
+        border: none;
+      }
+      .form-control {
+        background-color: #2c2f33;
+        color: white;
+        border: 1px solid #444;
+        padding: 1rem;
+      }
+      .form-control::placeholder {
+        color: white;
+        opacity: 1;
+      }
+      .form-control:focus {
+        background-color: white;
+        color: black;
+      }
+      .form-control:focus::placeholder {
+        color: black;
+      }
+      .login-container p {
+        color: white;
+        margin-top: 1.5rem;
+      }
+      h1 {
+        font-family: "Stalinist One", sans-serif;
+        margin-bottom: 2rem;
+      }
+      .mb-3 {
+        margin-bottom: 1.5rem !important;
+      }
+      @media (max-width: 768px) {
+        .login-container {
+          padding: 2rem;
+          max-width: 90%;
         }
+      }
+      @media (max-width: 480px) {
+        .login-container {
+          padding: 1.5rem;
+          max-width: 95%;
+        }
+      }
     </style>
-</head>
-
-<body>
-    <div class="container">
-        <h1>LOGIN</h1>
-        <div class="login">
-            <label for="login_email">Email:</label>
-            <input type="text" id="login_email" name="login_email" placeholder="Enter your email">
-            <label for="login_pw">Password:</label>
-            <input type="password" id="login_pw" name="login_pw" placeholder="Enter your password">
+  </head>
+  <body>
+    <div class="login-container text-center">
+      <h2 class="mt-3" style="font-family: 'Stalinist One', sans-serif;">LOGIN</h2>
+      <form>
+        <div class="mb-3">
+          <input
+            type="email"
+            class="form-control"
+            placeholder="Email address"
+            required
+          />
         </div>
-    </div>
-</body>
+        <div class="mb-3">
+          <input
+            type="password"
+            class="form-control"
+            placeholder="Password"
+            required
+          />
+        </div>
+        <div class="form-check mb-3 text-start">
+          <input type="checkbox" class="form-check-input" id="rememberMe" />
+          <label class="form-check-label" for="rememberMe">Remember me</label>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Sign in</button>
+      </form>
+      <p>
+        New to FitMed?
+        <span><a href="../SIGN_UP/Sign_up_page.html">Sign Up</a></span>
+      </p>
 
+      <p>&copy; 2024-2025</p>
+      <button type="button" class="btn btn-secondary w-100" onclick="window.location.href='../INDEX/index.html'">Go Back to Home</button>
+
+    </div>
+  </body>
 </html>
