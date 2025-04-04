@@ -11,9 +11,10 @@
     <link rel="stylesheet" href="../SERVICES/Services.css">
 
     <style>
-        body{
+        main {
             height: auto;
         }
+
         .form-container2 {
             justify-content: center;
             align-items: center;
@@ -34,28 +35,73 @@
             width: 100%;
         }
 
-    .mb-3 {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 15px;
-    }
+        .mb-3 {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
 
-    .mb-3 label {
-        text-align: right;
-        margin-right: 10px;
-        align-items: center;
-    }
+        .mb-3 label {
+            text-align: right;
+            margin-right: 10px;
+            align-items: center;
+        }
 
-    .mb-3 input, 
-    .mb-3 select {
-        width: 80%;
-        height: 30px;
-    }
-    
+        .mb-3 input,
+        .mb-3 select {
+            width: 80%;
+            height: 30px;
+        }
 
-        
+
+        .btn-grad {
+            background-image: linear-gradient(to right, #ff00cc 0%, #333399 51%, #ff00cc 100%)
+        }
+
+        .btn-grad {
+            margin-left: 75%;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+        }
+
+        .btn-grad:hover {
+            background-position: right center;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .heading {
+            text-align: center;
+            margin-top: 10%;
+        }
+
+        .heading h1 {
+            font-weight: 500;
+            font-size: 150px;
+            background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: 3s ease-in-out, -webkit-text-fill-color 3s ease-in-out;
+            font-family: "Libre Baskerville", serif;
+
+        }
+
+        .heading h1:hover {
+            background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     </style>
 
 </head>
@@ -80,18 +126,9 @@
                             <a href="../SERVICES/services.html">SERVICES</a>
                             <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
                             <ul class="htmlCss-sub-menu sub-menu">
-                                <li><a href="../SERVICES/bmi.html">BMI</a></li>
-                                <li><a href="">WORKOUT</a></li>
-                                <li><a href="#">DIET</a></li>
-                                <li class="more">FIND MORE
-                                    <span><i class='bx bxs-chevron-right arrow more-arrow'></i></span>
-                                    <ul class="more-sub-menu sub-menu">
-                                        <li><a href="">GYM</a></li>
-                                        <li><a href="#">STORES</a></li>
-                                        <li><a href="#">CONSULTANTCY</a></li>
-
-                                    </ul>
-                                </li>
+                                <li><a href="../SERVICES/Gym.html">GYM</a></li>
+                                <li><a href="../SERVICES/Stores.html">STORES</a></li>
+                                <li><a href="../SERVICES/Consultancy.html">CONSULTANTCY</a></li>
                             </ul>
                         </li>
                         <li>
@@ -127,7 +164,9 @@
 
     <main>
         <div class="form-container2">
-            <h1>User Fitness Form</h1>
+            <div class="heading">
+                <h1>User Fitness Form</h1>
+            </div>
             <form id="fitness-form">
                 <div class="mb-3">
                     <label for="gender" class="form-label">Gender:</label>
@@ -170,6 +209,10 @@
                         <option value="Intermediate">Intermediate</option>
                         <option value="Advanced">Advanced</option>
                     </select>
+                </div>
+                <div class="mb-3">
+                    <button class="btn-grad" type="submit">Submit</button>
+
                 </div>
 
             </form>
