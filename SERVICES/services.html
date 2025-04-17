@@ -5,104 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gym</title>
+    <link rel="stylesheet" href="../INDEX/index.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="../INDEX/index.css">
-    <link rel="stylesheet" href="../SERVICES/Services.css">
-
-    <style>
-        main {
-            height: auto;
-        }
-
-        .form-container2 {
-            justify-content: center;
-            align-items: center;
-            background-color: #f0f0f0;
-            margin-top: 70px;
-            text-align: center;
-        }
-
-        .form-container2 h1 {
-            text-align: center;
-        }
-
-        #fitness-form {
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-        }
-
-        .mb-3 {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 15px;
-        }
-
-        .mb-3 label {
-            text-align: right;
-            margin-right: 10px;
-            align-items: center;
-        }
-
-        .mb-3 input,
-        .mb-3 select {
-            width: 80%;
-            height: 30px;
-        }
-
-
-        .btn-grad {
-            background-image: linear-gradient(to right, #ff00cc 0%, #333399 51%, #ff00cc 100%)
-        }
-
-        .btn-grad {
-            margin-left: 75%;
-            padding: 15px 45px;
-            text-align: center;
-            text-transform: uppercase;
-            transition: 0.5s;
-            background-size: 200% auto;
-            color: white;
-            box-shadow: 0 0 20px #eee;
-            border-radius: 10px;
-            display: block;
-        }
-
-        .btn-grad:hover {
-            background-position: right center;
-            color: #fff;
-            text-decoration: none;
-        }
-
-        .heading {
-            text-align: center;
-            margin-top: 10%;
-        }
-
-        .heading h1 {
-            font-weight: 500;
-            font-size: 150px;
-            background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            transition: 3s ease-in-out, -webkit-text-fill-color 3s ease-in-out;
-            font-family: "Libre Baskerville", serif;
-
-        }
-
-        .heading h1:hover {
-            background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-    </style>
 
 </head>
 
@@ -114,8 +19,7 @@
         <nav>
             <div class="navbar">
                 <i class='bx bx-menu'></i>
-                <div class="logo"><a href="../INDEX/index.html"><img src="../assets/212291152-removebg-preview.png"
-                            alt="logo"></a></div>
+                <div class="logo"><a href="../INDEX/index.html"><img src="../assets/212291152-removebg-preview.png" alt="logo"></a></div>
                 <div class="nav-links">
                     <div class="sidebar-logo">
                         <i class='bx bx-x'></i>
@@ -158,70 +62,14 @@
         </nav>
         <!--         ---------   nav bar end  --------------      -->
 
-
     </header>
     <!-- Header ends -->
 
     <main>
-        <div class="form-container2">
-            <div class="heading">
-                <h1>User Fitness Form</h1>
-            </div>
-            <form id="fitness-form">
-                <div class="mb-3">
-                    <label for="gender" class="form-label">Gender:</label>
-                    <select class="form-select" id="gender" required>
-                        <option value="">Select Gender</option>
-                        <option value="M">Male</option>
-                        <option value="F">Female</option>
-                    </select>
-                </div>
-                <div class="mb-3">
-                    <label for="age" class="form-label">Age:</label>
-                    <input type="number" class="form-control" id="age" required>
-                </div>
-                <div class="mb-3">
-                    <label for="height" class="form-label">Height (cm):</label>
-                    <input type="number" class="form-control" id="height" required>
-                </div>
-                <div class="mb-3">
-                    <label for="weight" class="form-label">Weight (kg):</label>
-                    <input type="number" class="form-control" id="weight" required>
-                </div>
-                <div class="mb-3">
-                    <label for="bpm" class="form-label">Resting BPM:</label>
-                    <input type="number" class="form-control" id="bpm" required>
-                </div>
-                <div class="mb-3">
-                    <label for="workoutFrequency" class="form-label">Workout Frequency:</label>
-                    <select class="form-select" id="workoutFrequency" required>
-                        <option value="">Select Frequency</option>
-                        <option value="3days">3 Days</option>
-                        <option value="4days">4 Days</option>
-                        <option value="5days">5 Days</option>
-                    </select>
-                </div>
-                <div class="mb-3">
-                    <label for="experience" class="form-label">Experience Level:</label>
-                    <select class="form-select" id="experience" required>
-                        <option value="">Select Experience Level</option>
-                        <option value="Beginner">Beginner</option>
-                        <option value="Intermediate">Intermediate</option>
-                        <option value="Advanced">Advanced</option>
-                    </select>
-                </div>
-                <div class="mb-3">
-                    <button class="btn-grad" type="submit">Submit</button>
-
-                </div>
-
-            </form>
-
-        </div>
-
+        
     </main>
 
-
+      
     <footer>
         <div class="footer-container">
 
@@ -231,58 +79,54 @@
                     <li><a href="../SERVICES/services.html">Services</a> </li>
                     <li><a href="../PRICING/Pricing.html">Pricing</a></li>
                     <li><a href="../FAQ/faq.html">FAQ</a></li>
-                </ul>
-
-            </div>
-            <div class="footer-card">
-                <h1>LEGAL LINKS</h1>
-                <ul>
-                    <li><a href="../LEGAL_LINKS/Privacy.html">Privacy Policy</a> </li>
-                    <li><a href="../LEGAL_LINKS/tc.html">Terms & Conditions</a></li>
-                    <li><a href="../LEGAL_LINKS/cookie.html">Cookie Policy</a></li>
-                </ul>
-
-            </div>
-            <div class="footer-card">
-                <a href="../ABOUT_US/about_us.html">
-                    <h1>ABOUT US</h1>
-                </a>
-            </div>
-
-            <div class="footer-card">
-                <a href="../CONTACT_US/contact.html">
-                    <h1>CLIENTS</h1>
-                </a>
-            </div>
-        </div>
-
-        <div class="social-icon">
-
-            <a href="../CONTACT_US/contact.html" target="_blank" title="Contact Us">
-                <span><i class="fab fa-linkedin-in"></i></span>
-            </a>
-            <a href="../CONTACT_US/contact.html" target="_blank" title="Contact Us">
-                <span><i class="fab fa-twitter"></i></span>
-            </a>
-            <a href="../CONTACT_US/contact.html" target="_blank" title="Contact Us">
-                <span><i class="fab fa-instagram"></i></span>
-            </a>
-            <a href="../CONTACT_US/contact.html" target="_blank" title="Contact Us">
-                <span><i class="fab fa-discord"></i></span>
-            </a>
+            </ul>
 
         </div>
-
-
-        <div class="copyright">
-            <p><i>© 2025 FITMED GUIDE. All Rights Reserved.</i></p>
+        <div class="footer-card">
+            <h1>LEGAL LINKS</h1>
+            <ul>
+                <li><a href="../LEGAL_LINKS/Privacy.html">Privacy Policy</a> </li>
+                <li><a href="../LEGAL_LINKS/tc.html">Terms & Conditions</a></li>
+                <li><a href="../LEGAL_LINKS/cookie.html">Cookie Policy</a></li>
+            </ul>
+            
         </div>
+        <div class="footer-card">
+            <a href="../ABOUT_US/about_us.html"><h1>ABOUT US</h1></a>
+        </div>
+        
+        <div class="footer-card">
+            <a href="../CONTACT_US/contact.html"><h1>CLIENTS</h1></a>
+        </div>
+    </div>
+
+    <div class="social-icon">
+            
+        <a href="../CONTACT_US/contact.html" target="_blank" title="Contact Us">
+            <span><i class="fab fa-linkedin-in"></i></span>
+        </a>
+        <a href="../CONTACT_US/contact.html" target="_blank" title="Contact Us">
+            <span><i class="fab fa-twitter"></i></span>
+        </a>
+        <a href="../CONTACT_US/contact.html" target="_blank" title="Contact Us">
+            <span><i class="fab fa-instagram"></i></span>
+        </a>
+        <a href="../CONTACT_US/contact.html" target="_blank" title="Contact Us">
+            <span><i class="fab fa-discord"></i></span>
+        </a>
+        
+    </div>
+
+        
+    <div class="copyright"><p><i>© 2025 FITMED GUIDE. All Rights Reserved.</i></p></div>
+
+
+
+
 
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="index.js"></script>
 
 </body>
