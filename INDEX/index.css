@@ -915,3 +915,54 @@ form button {
 
 
 }
+
+
+
+/* SERVICES PAGE */
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+  margin-top: 100px;
+  margin-top: 10%;
+}
+
+.services-container .card {
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+  width: 500px; 
+  height: 500px; 
+  margin: 20px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Ensures content stays within the card */
+  transform: translateY(-5px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 5%;
+}
+
+.services-container .card img {
+  width: 100%; /* Ensures the image spans the full width of the card */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 15%; /* Adds rounded corners */
+  padding: 5% 5%;
+}
+
+.services-container .card:hover {
+  transform: scale(1.05); /* Slightly enlarges the image on hover */
+}
+
+.services-container .card h1 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin: 5px 0;
+  color: #333;
+  position: relative;
+  z-index: 2;
+  font-family: "Sigmar", sans-serif;}
+
