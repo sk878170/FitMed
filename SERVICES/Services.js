@@ -1,3 +1,10 @@
+const heightInput = document.getElementById('height').value;
+const heightUnit = document.getElementById('height-unit').value;
+
+const weightInput = document.getElementById('weight').value;
+const weightUnit = document.getElementById('weight-unit').value;
+
+
 function feetTOcm(feet){
     return feet * 30.48;
 }
@@ -14,12 +21,6 @@ function calculateBMI(weight, height) {
 }
 
 function convert(){
-    const heightInput = heightElement.value;
-    const heightUnit = heightUnitElement.value;
-
-    const weightInput = weightElement.value;
-    const weightUnit = weightUnitElement.value;
-
     let weightInKg;
     if (weightUnit === 'lbs') {
         weightInKg = poundsToKG(parseFloat(weightInput));
