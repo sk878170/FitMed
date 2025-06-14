@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
-.theory{
+.theory {
     justify-content: center;
     display: flex;
     margin-top: 10%;
 
 }
 
-.theory h2{
+
+.theory h2 {
     font-size: 64px;
     font-weight: 900;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -16,47 +17,52 @@
     background-color: rgb(137, 129, 129);
     border-radius: 5%;
     margin: 10px;
-    transition: all 0.3s ease-in-out; /* Smooth transition */
-    transform: translateX(-100px); 
-    animation: slideIn 1s ease-in-out forwards; /* Apply animation */
+    transition: all 0.3s ease-in-out;
+    /* Smooth transition */
+    transform: translateX(-100px);
+    animation: slideIn 1s ease-in-out forwards;
+    /* Apply animation */
 }
 
 .theory h2:hover {
-    background-color: rgb(100, 92, 92); /* Slightly darker shade on hover */
+    background-color: rgb(100, 92, 92);
+    /* Slightly darker shade on hover */
     color: white;
 }
 
-.theory p{
-    transform: translateX(-50px); 
-    animation: slideOut 1s ease-in-out forwards; /* Apply animation */
+.theory p {
+    transform: translateX(-50px);
+    animation: slideOut 1s ease-in-out forwards;
+    /* Apply animation */
     font-size: 24px;
     padding: 0 5%;
     text-align: justify;
-    
+
 }
 
-.about_container{
+.about_container {
     justify-content: center;
 }
 
 
 
-.about_container h1{
+#heading {
     text-align: center;
     font-size: 6rem;
     font-family: fantasy;
-    background: rgb(238,174,202);
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-    text-shadow: 5px 5px  black;
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    text-shadow: 5px 5px black;
     border: 5px solid black;
     color: white;
     border-radius: 25%;
     margin: 10% 25%;
     width: 50%;
-    animation: fadeIn 2s ease-in-out forwards; /* Apply animation */
+    animation: fadeIn 2s ease-in-out forwards;
+    /* Apply animation */
 }
 
-.intro{
+.intro {
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -65,55 +71,119 @@
 
 }
 
-.box{
+.box {
     align-items: center;
     width: 100%;
 }
 
-.box img{
+.box img {
     width: 300px;
     height: 300px;
     box-shadow: 5px 5px 5px rgb(33, 30, 30);
     border-radius: 10px;
 }
 
+/* === Team Carousel Styling === */
+.team-carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 250px;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: linear-gradient(135deg, #2b5876, #4e4376);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.team-item {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    text-align: center;
+    color: white;
+}
+
+.team-item.active {
+    opacity: 1;
+}
+
+.team-content h1 {
+    font-size: 56px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.team-content p {
+    font-size: 1rem;
+    color: #dddddd;
+    max-width: 600px;
+    line-height: 1.4;
+}
+
+
+.footer-container a,
+.navbar a,
+.social-icon a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-container a:hover,
+.navbar a:hover {
+    color: #ddd;
+}
+
+
 
 @media (max-width:800px) {
-    .theory{
+    .theory {
         display: block;
         text-align: center;
     }
 
-    .theory h2{
+    .theory h2 {
         width: 100%;
     }
 
-    .theory p{
+    .theory p {
         padding: 10%;
     }
 
-    .about_container h1{
+    .about_container h1 {
         padding: 0;
         margin: 25% 0;
         width: 100%;
-        
+
     }
 
-    .intro{
+    .intro {
         display: block;
         margin: 20px;
     }
 
-    .box{
+    .box {
         padding: 10px;
     }
-    
+
 }
 
 @keyframes fadeIn {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -124,21 +194,27 @@
 @keyframes slideIn {
     from {
         opacity: 0;
-        transform: translateX(-100px); /* Start off-screen left */
+        transform: translateX(-100px);
+        /* Start off-screen left */
     }
+
     to {
         opacity: 1;
-        transform: translateX(0); /* Move to normal position */
+        transform: translateX(0);
+        /* Move to normal position */
     }
 }
 
 @keyframes slideOut {
     from {
         opacity: 0;
-        transform: translateX(100px); /* Start off-screen right */
+        transform: translateX(100px);
+        /* Start off-screen right */
     }
+
     to {
         opacity: 1;
-        transform: translateX(0); /* Move to normal position */
+        transform: translateX(0);
+        /* Move to normal position */
     }
 }

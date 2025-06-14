@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gym</title>
+    <link rel="stylesheet" href="../INDEX/index.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <style>
+
+        #head{
+            text-align: center;
+      padding: 10px;
+      background-color: #111;
+      color: #fff;
+        }
+
+
+        #map {
+            height: 90vh;
+            width: 100%;
+        }
+
+        #status {
+            text-align: center;
+            padding: 10px;
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <!--         ---------   nav bar start   --------------      -->
+        <nav>
+            <div class="navbar">
+                <i class='bx bx-menu'></i>
+                <div class="logo"><a href="../INDEX/index.html"><img src="../assets/212291152-removebg-preview.png"
+                            loading="lazy" alt="logo"></a></div>
+                <div class="nav-links">
+                    <div class="sidebar-logo">
+                        <i class='bx bx-x'></i>
+                    </div>
+                    <ul class="links">
+                        <li><a href="../INDEX/index.html">HOME</a></li>
+                        <li>
+                            <a href="../LOGIN/login_page.html">Services</a>
+                            <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+                            <ul class="htmlCss-sub-menu sub-menu">
+                                <li><a href="../SERVICES/Gym.html">GYM</a></li>
+                                <li><a href="../SERVICES/Stores.html">STORES</a></li>
+                                <li><a href="../SERVICES/Consultancy.html">CONSULTANTCY</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../FAQ/faq.html">FAQ</a>
+                        </li>
+                        <li><a href="../ABOUT_US/about_us.html">ABOUT US</a></li>
+                        <li><a href="../CONTACT_US/contact.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <!-- dark and  search botton  -->
+                <div class="darkLight-searchBox">
+                    <div class="dark-light">
+                        <i class='bx bx-moon moon'></i>
+                        <i class='bx bx-sun sun'></i>
+                    </div>
+                    <div class="search-box">
+                        <i class='bx bx-search'></i>
+                        <div class="input-box">
+                            <input type="text" id="input" placeholder="Search...">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="signup">
+                    <span><a href="../SIGN_UP/Sign_up_page.html">GET STARTED</a></span>
+                </div>
+        </nav>
+
+
+    </header>
+    <!-- Header ends -->
+
+    <main>
+        <h1 id="head">Gym Equipment Stores Near You</h1>
+        <div id="status">Detecting your location...</div>
+        <div id="map"></div>
+
+
+    </main>
+
+
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-card">
+                <h1>Explore</h1>
+                <ul>
+                    <li><a href="../SERVICES/services.html">Services</a> </li>
+                    <li><a href="../PRICING/Pricing.html">Pricing</a></li>
+                    <li><a href="../FAQ/faq.html">FAQ</a></li>
+                </ul>
+
+            </div>
+            <div class="footer-card">
+                <h1>LEGAL LINKS</h1>
+                <ul>
+                    <li><a href="../LEGAL_LINKS/Privacy.html">Privacy Policy</a> </li>
+                    <li><a href="../LEGAL_LINKS/tc.html">Terms & Conditions</a></li>
+                    <li><a href="../LEGAL_LINKS/cookie.html">Cookie Policy</a></li>
+                </ul>
+
+            </div>
+            <div class="footer-card">
+                <a href="../ABOUT_US/about_us.html">
+                    <h1>ABOUT US</h1>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="social-icon">
+
+            <a href="../CONTACT_US/contact.html" target="_blank" title="Contact Us">
+                <span><i class="fab fa-linkedin-in"></i></span>
+            </a>
+            <a href="../CONTACT_US/contact.html" target="_blank" title="Contact Us">
+                <span><i class="fab fa-twitter"></i></span>
+            </a>
+            <a href="../CONTACT_US/contact.html" target="_blank" title="Contact Us">
+                <span><i class="fab fa-instagram"></i></span>
+            </a>
+            <a href="../CONTACT_US/contact.html" target="_blank" title="Contact Us">
+                <span><i class="fab fa-discord"></i></span>
+            </a>
+
+        </div>
+
+
+        <div class="copyright">
+            <p><i>© 2025 FITMED GUIDE. All Rights Reserved.</i></p>
+        </div>
+
+
+
+
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script>
+        let map;
+
+        function initMap() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition((position) => {
+                    const userLocation = {
+                        lat: position.coords.latitude,
+                        lng: position.coords.longitude
+                    };
+
+                    map = new google.maps.Map(document.getElementById("map"), {
+                        center: userLocation,
+                        zoom: 14
+                    });
+
+                    new google.maps.Marker({
+                        position: userLocation,
+                        map,
+                        title: "Your Location"
+                    });
+
+                    // Search for gym equipment stores
+                    const request = {
+                        location: userLocation,
+                        radius: 5000, // 5km range
+                        keyword: 'gym equipment store'
+                    };
+
+                    const service = new google.maps.places.PlacesService(map);
+                    service.nearbySearch(request, (results, status) => {
+                        if (status === google.maps.places.PlacesServiceStatus.OK) {
+                            results.forEach((place) => {
+                                new google.maps.Marker({
+                                    position: place.geometry.location,
+                                    map,
+                                    title: place.name
+                                });
+                            });
+                            document.getElementById("status").innerText = "Found " + results.length + " stores near you.";
+                        } else {
+                            document.getElementById("status").innerText = "No gym equipment stores found nearby.";
+                        }
+                    });
+                }, () => {
+                    document.getElementById("status").innerText = "Location access denied.";
+                });
+            } else {
+                document.getElementById("status").innerText = "Geolocation is not supported by your browser.";
+            }
+        }
+    </script>
+
+    <!-- Load Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY_HERE&libraries=places&callback=initMap" async
+        defer></script>
+
+</body>
+
+</html>

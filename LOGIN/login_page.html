@@ -53,7 +53,7 @@
         color: white;
         margin-top: 1.5rem;
       }
-      h1 {
+      h2 {
         font-family: "Stalinist One", sans-serif;
         margin-bottom: 2rem;
       }
@@ -72,15 +72,25 @@
           max-width: 95%;
         }
       }
+
+      .error-msg {
+        color: #ff4d4d;
+        margin-bottom: 1rem;
+        font-weight: bold;
+      }
     </style>
   </head>
   <body>
     <div class="login-container text-center">
       <h2 class="mt-3">LOGIN</h2>
-      <form>
+
+      <div id="errorMsg" class="error-msg"></div>
+
+      <form id="loginForm">
         <div class="mb-3">
           <input
             type="email"
+            id="email"
             class="form-control"
             placeholder="Email address"
             required
@@ -89,6 +99,7 @@
         <div class="mb-3">
           <input
             type="password"
+            id="password"
             class="form-control"
             placeholder="Password"
             required
@@ -100,14 +111,63 @@
         </div>
         <button type="submit" class="btn btn-primary w-100">Sign in</button>
       </form>
+      <p style="text-align: center; margin-top: 10px;">
+  <a href="../auth/forgot-password.html">Forgot Password?</a>
+</p>
+
       <p>
         New to FitMed?
         <span><a href="../SIGN_UP/Sign_up_page.html">Sign Up</a></span>
       </p>
 
       <p>&copy; 2024-2025</p>
-      <button type="button" class="btn btn-secondary w-100" onclick="window.location.href='../INDEX/index.html'">Go Back to Home</button>
-
+      <button
+        type="button"
+        class="btn btn-secondary w-100"
+        onclick="window.location.href='../INDEX/index.html'"
+      >
+        Go Back to Home
+      </button>
     </div>
+
+    <!-- ✅ Script for login and token storage -->
+    <script>
+      const loginForm = document.getElementById("loginForm");
+      const errorMsg = document.getElementById("errorMsg");
+
+      loginForm.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        errorMsg.textContent = "";
+
+        const email = document.getElementById("email").value.trim();
+        const password = document.getElementById("password").value.trim();
+
+        try {
+          const res = await fetch("http://localhost:5000/api/auth/login", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ email, password }),
+          });
+
+          const data = await res.json();
+
+          if (!res.ok) {
+            errorMsg.textContent = data.msg || "Login failed!";
+            return;
+          }
+
+          // ✅ Save token in localStorage for other pages
+         localStorage.setItem('token', data.token); // ✅ Save the token
+
+          // ✅ Redirect to dashboard
+          window.location.href = "dashboard.html";
+        } catch (error) {
+          errorMsg.textContent = "Network error. Please try again later.";
+        }
+      });
+    </script>
   </body>
 </html>

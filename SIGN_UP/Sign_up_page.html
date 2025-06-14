@@ -39,11 +39,9 @@
         color: white;
         opacity: 1;
       }
-
-      .mark{
+      .mark {
         background-color: #1c1e21;
       }
-
       @media (max-width: 768px) {
         .signup-container {
           padding: 1.5rem;
@@ -107,47 +105,68 @@
       <div class="mark">
         <p class="mark">&copy; 2024-2025</p>
       </div>
-      <button type="button" class="btn btn-secondary w-100" onclick="window.location.href='../INDEX/index.html'">Go Back to Home</button>
+      <button
+        type="button"
+        class="btn btn-secondary w-100"
+        onclick="window.location.href='../INDEX/index.html'"
+      >
+        Go Back to Home
+      </button>
     </div>
 
-
-
+    <!-- ✅ Include API logic -->
+    <script src="../api.js"></script>
     <script>
-        function validateForm(event) {
-          event.preventDefault();
-  
-          let firstName = document.getElementById("firstName").value;
-          let lastName = document.getElementById("lastName").value;
-          let email = document.getElementById("email").value;
-          let password = document.getElementById("password").value;
-  
-          let nameRegex = /^[A-Za-z]+$/;
-          let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-          let passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
-          let numberRegex = /[0-9]/;
-  
-          if (!nameRegex.test(firstName)) {
-            alert("Please enter a valid name");
-            return;
-          }
-  
-          if (!nameRegex.test(lastName)) {
-            alert("please enter a valid name");
-            return;
-          }
-  
-            if (!/^[a-z]{3}\d{3}@domain\.com$/.test(email)) { 
-            alert("Please enter a valid email address in the format");
-            return;
-            }
-  
-          if (!passwordRegex.test(password)) {
-            alert("Password must be at least 8 characters long and contain at least one letter, one number, and one special character.");
-            return;
-          }
-  
-          alert("Signup successful!");
+      async function validateForm(event) {
+        event.preventDefault();
+
+        const firstName = document.getElementById("firstName").value.trim();
+        const lastName = document.getElementById("lastName").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const password = document.getElementById("password").value.trim();
+
+        const nameRegex = /^[A-Za-z\s'-]+$/;
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const passwordRegex =
+          /^(?=.*[A-Za-z])(?=.*\d)(?=.*[^A-Za-z0-9]).{8,}$/;
+
+        if (!nameRegex.test(firstName)) {
+          alert("Please enter a valid first name");
+          return;
         }
-      </script>
+
+        if (!nameRegex.test(lastName)) {
+          alert("Please enter a valid last name");
+          return;
+        }
+
+        if (!emailRegex.test(email)) {
+          alert("Please enter a valid email address.");
+          return;
+        }
+
+        if (!passwordRegex.test(password)) {
+          alert(
+            "Password must be at least 8 characters and include a letter, number, and special symbol."
+          );
+          return;
+        }
+
+        // ✅ Correct structure expected by backend
+        const response = await registerUser({
+          firstName,
+          lastName,
+          email,
+          password,
+        });
+
+        if (response.msg === "✅ User registered successfully!") {
+          alert("✅ Registration successful!");
+          window.location.href = "../LOGIN/login_page.html";
+        } else {
+          alert("❌ Registration failed: " + (response.msg || "Unknown error"));
+        }
+      }
+    </script>
   </body>
 </html>

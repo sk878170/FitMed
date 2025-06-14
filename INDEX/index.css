@@ -793,13 +793,12 @@ footer{
 }
 
 .footer-container {
-
+  margin-top: 25px;
   height: 200px;
   width: 100%;
   display: flex;
   /* Adjust padding as needed */
   padding: 50px 50px 50px 50px;
-  margin-top: 900px;
   z-index: 100;
   bottom: 0;
 }

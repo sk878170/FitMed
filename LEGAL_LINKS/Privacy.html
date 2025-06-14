@@ -1,55 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>gym</title>
-        <link rel="stylesheet" href="../INDEX/index.css">
-        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-        <script src="../INDEX/index.js"></script>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-                background-color: #f8f9fa;
-            }
-            .container {
-                max-width: 800px;
-                margin: 50px auto;
-                background: #fff;
-                padding: 20px;
-                border-radius: 10px;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            }
-            .container h1 {
-                text-align: center;
-                color: #333;
-            }
-            .container p, ul {
-                color: #555;
-                line-height: 1.6;
-            }
-            .container ul {
-                padding-left: 20px;
-            }
-            .container li {
-                margin-bottom: 8px;
-            }
-            @media (max-width: 600px) {
-                .container {
-                    margin: 20px;
-                    padding: 15px;
-                }
-                .container h1 {
-                    font-size: 22px;
-                }
-            }
-            </style>
-    </head>
-<body>
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gym</title>
+    <link rel="stylesheet" href="../INDEX/index.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+
+    <style>
+        .container {
+            max-width: 800px;
+            margin: 90px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .container h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .container p,
+        .container ul {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .container ul {
+            padding-left: 20px;
+        }
+
+        .container li {
+            margin-bottom: 8px;
+        }
+
+        .footer-container a,
+        .navbar a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-container a:hover,
+        .navbar a:hover {
+            color: #ddd;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 20px;
+                padding: 15px;
+            }
+
+            .container h1 {
+                font-size: 22px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
 
     <header>
 
@@ -57,7 +72,8 @@
         <nav>
             <div class="navbar">
                 <i class='bx bx-menu'></i>
-                <div class="logo"><a href="../INDEX/index.html"><img src="../assets/212291152-removebg-preview.png" loading="lazy" alt="logo"></a></div>
+                <div class="logo"><a href="../INDEX/index.html"><img src="../assets/212291152-removebg-preview.png"
+                            loading="lazy" alt="logo"></a></div>
                 <div class="nav-links">
                     <div class="sidebar-logo">
                         <i class='bx bx-x'></i>
@@ -65,21 +81,12 @@
                     <ul class="links">
                         <li><a href="../INDEX/index.html">HOME</a></li>
                         <li>
-                            <a href="../SERVICES/Form.html">SERVICES</a>
+                            <a href="../LOGIN/login_page.html">Services</a>
                             <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
                             <ul class="htmlCss-sub-menu sub-menu">
-                                <li><a href="">BMI</a></li>
-                                <li><a href="">WORKOUT</a></li>
-                                <li><a href="#">DIET</a></li>
-                                <li class="more">FIND MORE
-                                    <span><i class='bx bxs-chevron-right arrow more-arrow'></i></span>
-                                    <ul class="more-sub-menu sub-menu">
-                                        <li><a href="">GYM</a></li>
-                                        <li><a href="#">STORES</a></li>
-                                        <li><a href="#">CONSULTANTCY</a></li>
-
-                                    </ul>
-                                </li>
+                                <li><a href="../SERVICES/Gym.html">GYM</a></li>
+                                <li><a href="../SERVICES/Stores.html">STORES</a></li>
+                                <li><a href="../SERVICES/Consultancy.html">CONSULTANTCY</a></li>
                             </ul>
                         </li>
                         <li>
@@ -107,46 +114,70 @@
                     <span><a href="../SIGN_UP/Sign_up_page.html">GET STARTED</a></span>
                 </div>
         </nav>
+
+
     </header>
+    <!-- Header ends -->
 
+    <main>
 
+        <div class="container">
+            <h1>PRIVACY POLICY</h1>
+            <div class="elementor-widget-container">
+                <p><b>FitMed Guide Privacy Policy</b></p>
+                <p><b>1. Introduction</b></p>
+                <p>This Privacy Policy describes how FitMed Guide collects, uses, and protects your personal
+                    information. By
+                    using FitMed Guide, you consent to the practices described in this policy.</p>
+                <p><b>2. Information We Collect</b></p>
+                <p>We may collect the following types of information from you:</p>
+                <ul>
+                    <li><b>Personal Information:</b> This includes your name, email address, height, weight, body fat
+                        percentage, muscle percentage, age, and gender.</li>
+                    <li><b>Usage Data:</b> Information about how you use FitMed Guide, such as the pages you visit and
+                        the
+                        features you use.</li>
+                </ul>
+                <p><b>3. How We Use Your Information</b></p>
+                <ul>
+                    <li>Provide and improve our services.</li>
+                    <li>Personalize your experience.</li>
+                    <li>Communicate with you about FitMed Guide.</li>
+                    <li>Comply with legal requirements.</li>
+                </ul>
+                <p><b>4. Information Sharing</b></p>
+                <p>We do not share your personal information with third parties except as necessary to provide our
+                    services
+                    or as required by law.</p>
+                <p><b>5. Security</b></p>
+                <p>We take reasonable measures to protect your personal information from unauthorized access, use, or
+                    disclosure.</p>
+                <p><b>6. Your Rights</b></p>
+                <p>You have the right to access, correct, and delete your personal information. You can contact us at
+                    [Your
+                    Email Address] to exercise these rights.</p>
+                <p><b>7. Children’s Privacy</b></p>
+                <p>FitMed Guide does not knowingly collect or solicit personal information from children under the age
+                    of
+                    13.</p>
+                <p><b>8. Contact Us</b></p>
+                <p>If you have any questions or concerns about this Privacy Policy, please contact us at [Your Email
+                    Address].</p>
+            </div>
 
+            <div class="consent-box">
+                <input type="checkbox" id="cookieConsent">
+                <label for="cookieConsent">I have read and agree to FitMed Guide's Cookie Policy.</label>
+            </div>
 
+            <div class="checkbox-section">
+                <input type="checkbox" id="agreeCheck" onclick="toggleButton()" />
+                <label for="agreeCheck"> I have read and agree to the Terms & Conditions</label><br />
 
-
-    <div class="container">
-        <h1>PRIVACY POLICY</h1>
-        <div class="elementor-widget-container">
-            <p><b>FitMed Guide Privacy Policy</b></p>
-            <p><b>1. Introduction</b></p>
-            <p>This Privacy Policy describes how FitMed Guide collects, uses, and protects your personal information. By using FitMed Guide, you consent to the practices described in this policy.</p>
-            <p><b>2. Information We Collect</b></p>
-            <p>We may collect the following types of information from you:</p>
-            <ul>
-                <li><b>Personal Information:</b> This includes your name, email address, height, weight, body fat percentage, muscle percentage, age, and gender.</li>
-                <li><b>Usage Data:</b> Information about how you use FitMed Guide, such as the pages you visit and the features you use.</li>
-            </ul>
-            <p><b>3. How We Use Your Information</b></p>
-            <ul>
-                <li>Provide and improve our services.</li>
-                <li>Personalize your experience.</li>
-                <li>Communicate with you about FitMed Guide.</li>
-                <li>Comply with legal requirements.</li>
-            </ul>
-            <p><b>4. Information Sharing</b></p>
-            <p>We do not share your personal information with third parties except as necessary to provide our services or as required by law.</p>
-            <p><b>5. Security</b></p>
-            <p>We take reasonable measures to protect your personal information from unauthorized access, use, or disclosure.</p>
-            <p><b>6. Your Rights</b></p>
-            <p>You have the right to access, correct, and delete your personal information. You can contact us at [Your Email Address] to exercise these rights.</p>
-            <p><b>7. Children’s Privacy</b></p>
-            <p>FitMed Guide does not knowingly collect or solicit personal information from children under the age of 13.</p>
-            <p><b>8. Contact Us</b></p>
-            <p>If you have any questions or concerns about this Privacy Policy, please contact us at [Your Email Address].</p>
+                <button class="agree-button" id="agreeBtn" disabled>Proceed</button>
+            </div>
         </div>
-    </div>
-
-
+    </main>
 
 
     <footer>
@@ -158,46 +189,67 @@
                     <li><a href="../SERVICES/services.html">Services</a> </li>
                     <li><a href="../PRICING/Pricing.html">Pricing</a></li>
                     <li><a href="../FAQ/faq.html">FAQ</a></li>
-            </ul>
+                </ul>
+
+            </div>
+            <div class="footer-card">
+                <h1>LEGAL LINKS</h1>
+                <ul>
+                    <li><a href="../LEGAL_LINKS/Privacy.html">Privacy Policy</a> </li>
+                    <li><a href="../LEGAL_LINKS/tc.html">Terms & Conditions</a></li>
+                    <li><a href="../LEGAL_LINKS/cookie.html">Cookie Policy</a></li>
+                </ul>
+
+            </div>
+            <div class="footer-card">
+                <a href="../ABOUT_US/about_us.html">
+                    <h1>ABOUT US</h1>
+                </a>
+            </div>
 
         </div>
-        <div class="footer-card">
-            <h1>LEGAL LINKS</h1>
-            <ul>
-                <li><a href="../LEGAL_LINKS/Privacy.html">Privacy Policy</a> </li>
-                <li><a href="../LEGAL_LINKS/tc.html">Terms & Conditions</a></li>
-                <li><a href="../LEGAL_LINKS/cookie.html">Cookie Policy</a></li>
-            </ul>
-            
-        </div>
-        <div class="footer-card">
-            <a href="../ABOUT_US/about_us.html"><h1>ABOUT US</h1></a>
-        </div>
-        
-        <div class="footer-card">
-            <a href="../CONTACT_US/contact.html"><h1>CLIENTS</h1></a>
-        </div>
-    </div>
 
-    <div class="social-icon">
-            
-        <a href="../CONTACT_US/contact.html" target="_blank" title="Contact Us">
-            <span><i class="fab fa-linkedin-in"></i></span>
-        </a>
-        <a href="../CONTACT_US/contact.html" target="_blank" title="Contact Us">
-            <span><i class="fab fa-twitter"></i></span>
-        </a>
-        <a href="../CONTACT_US/contact.html" target="_blank" title="Contact Us">
-            <span><i class="fab fa-instagram"></i></span>
-        </a>
-        <a href="../CONTACT_US/contact.html" target="_blank" title="Contact Us">
-            <span><i class="fab fa-discord"></i></span>
-        </a>
-        
-    </div>
+        <div class="social-icon">
 
-        
-    <div class="copyright"><p><i>© 2025 FITMED GUIDE. All Rights Reserved.</i></p></div>
+            <a href="../CONTACT_US/contact.html" target="_blank" title="Contact Us">
+                <span><i class="fab fa-linkedin-in"></i></span>
+            </a>
+            <a href="../CONTACT_US/contact.html" target="_blank" title="Contact Us">
+                <span><i class="fab fa-twitter"></i></span>
+            </a>
+            <a href="../CONTACT_US/contact.html" target="_blank" title="Contact Us">
+                <span><i class="fab fa-instagram"></i></span>
+            </a>
+            <a href="../CONTACT_US/contact.html" target="_blank" title="Contact Us">
+                <span><i class="fab fa-discord"></i></span>
+            </a>
+
+        </div>
+
+
+        <div class="copyright">
+            <p><i>© 2025 FITMED GUIDE. All Rights Reserved.</i></p>
+        </div>
+
+
+
+
+
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+
+     <script>
+        function toggleButton() {
+            const checkbox = document.getElementById("agreeCheck");
+            const button = document.getElementById("agreeBtn");
+            button.disabled = !checkbox.checked;
+        }
+    </script>
+
 </body>
+
 </html>

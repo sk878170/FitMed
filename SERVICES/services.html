@@ -67,17 +67,23 @@
 
     <main>
         <div class="services-container">
-            <div class="card" onclick="calculateBMIFromForm()">
-                <img src="../assets/bmi.jpeg" alt="bmi">
-                <h1>BMI calculator</h1>
+            <div class="card">
+            <a href="../SERVICES/Form.html">
+                    <img src="../assets/bmi.jpeg" alt="bmi">
+                    <h1>BMI calculator</h1>
+                </a>
             </div>
             <div class="card">
-                <img src="../assets/diet.jpeg" alt="diet">
-                <h1>Diet plan Generator</h1>
+                <img src="../assets/diet.jpeg" alt="diet" style="cursor:pointer;" onclick="window.location.href='http://localhost:8501/Diet_Recommendation'">
+                <a href="http://localhost:8501/Diet_Recommendation">
+                    <h1>Diet plan Generator</h1>
+                </a>
             </div>
             <div class="card">
-                <img src="../assets/workout.jpeg" alt="workout">
-                <h1>Workout plan Generator</h1>
+                <a href="../Workout-Planner/index.html">
+                    <img src="../assets/workout.jpeg" alt="workout">
+                    <h1>Workout plan Generator</h1>
+                </a>
             </div>
         </div>
     </main>
@@ -108,9 +114,7 @@
             <a href="../ABOUT_US/about_us.html"><h1>ABOUT US</h1></a>
         </div>
         
-        <div class="footer-card">
-            <a href="../CONTACT_US/contact.html"><h1>CLIENTS</h1></a>
-        </div>
+        
     </div>
 
     <div class="social-icon">
@@ -141,7 +145,6 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="../INDEX/index.js"></script>
-    <script src="Services.js"></script>
     
 
 </body>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gym</title>
+    <link rel="stylesheet" href="../INDEX/index.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+
+    <style>
+        .coiny-regular {
+            font-family: "Coiny", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+        
+        .head {
+            font-family: "Coiny", system-ui;
+            text-align: center;
+            padding: 50px 0;
+            background-color: #f4f4f4;
+            margin: 20px;
+            margin-top: 80px;
+        }
+
+        .head h1 {
+            font-size: 100px;
+        }
+
+
+        section {
+            padding: 20px;
+        }
+
+        .head2 {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .contact-card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .contact-card h3 {
+            margin-top: 0;
+            color: #444;
+        }
+
+        .contact-card p {
+            margin: 5px 0;
+        }
+
+        .contact-card a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .contact-card a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <!--         ---------   nav bar start   --------------      -->
+        <nav>
+            <div class="navbar">
+                <i class='bx bx-menu'></i>
+                <div class="logo"><a href="../INDEX/index.html"><img src="../assets/212291152-removebg-preview.png"
+                            loading="lazy" alt="logo"></a></div>
+                <div class="nav-links">
+                    <div class="sidebar-logo">
+                        <i class='bx bx-x'></i>
+                    </div>
+                    <ul class="links">
+                        <li><a href="../INDEX/index.html">HOME</a></li>
+                        <li>
+                            <a href="../LOGIN/login_page.html">Services</a>
+                            <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+                            <ul class="htmlCss-sub-menu sub-menu">
+                                <li><a href="../SERVICES/Gym.html">GYM</a></li>
+                                <li><a href="../SERVICES/Stores.html">STORES</a></li>
+                                <li><a href="../SERVICES/Consultancy.html">CONSULTANTCY</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../FAQ/faq.html">FAQ</a>
+                        </li>
+                        <li><a href="../ABOUT_US/about_us.html">ABOUT US</a></li>
+                        <li><a href="../CONTACT_US/contact.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <!-- dark and  search botton  -->
+                <div class="darkLight-searchBox">
+                    <div class="dark-light">
+                        <i class='bx bx-moon moon'></i>
+                        <i class='bx bx-sun sun'></i>
+                    </div>
+                    <div class="search-box">
+                        <i class='bx bx-search'></i>
+                        <div class="input-box">
+                            <input type="text" id="input" placeholder="Search...">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="signup">
+                    <span><a href="../SIGN_UP/Sign_up_page.html">GET STARTED</a></span>
+                </div>
+        </nav>
+
+
+    </header>
+    <!-- Header ends -->
+
+    <main>
+
+        <div class="head">
+
+            <h1>Contact Nearby Fitness Experts</h1>
+            <p>Find professional trainers and doctors to help you reach your fitness goals</p>
+        </div>
+
+        <section>
+            <h2 class="head2">🏋️ Nearby Gym Trainers</h2>
+            <div class="card-container">
+                <div class="contact-card">
+                    <h3>Trainer Name</h3>
+                    <p>🏠 Gym: XYZ Fitness Center</p>
+                    <p>📍 Location: City, Area</p>
+                    <p>📞 Phone: <a href="tel:+91xxxxxxxxxx">+91xxxxxxxxxx</a></p>
+                    <p>📧 Email: <a href="mailto:trainer@example.com">trainer@example.com</a></p>
+                </div>
+                <!-- Add more trainer cards -->
+            </div>
+        </section>
+
+        <section>
+            <h2 class="head2">💪 Fitness Professionals</h2>
+            <div class="card-container">
+                <div class="contact-card">
+                    <h3>Professional Name</h3>
+                    <p>🧠 Specialty: Fitness Coach / Strength & Conditioning</p>
+                    <p>📍 Location: City, Area</p>
+                    <p>📞 Phone: <a href="tel:+91xxxxxxxxxx">+91xxxxxxxxxx</a></p>
+                    <p>📧 Email: <a href="mailto:pro@example.com">pro@example.com</a></p>
+                </div>
+                <!-- Add more professional cards -->
+            </div>
+        </section>
+
+        <section>
+            <h2 class="head2">👨‍⚕️ Doctors & Health Experts</h2>
+            <div class="card-container">
+                <div class="contact-card">
+                    <h3>Doctor Name</h3>
+                    <p>🩺 Specialty: Sports Physician / Nutritionist</p>
+                    <p>🏥 Clinic: ABC Wellness Clinic</p>
+                    <p>📞 Phone: <a href="tel:+91xxxxxxxxxx">+91xxxxxxxxxx</a></p>
+                    <p>📧 Email: <a href="mailto:doctor@example.com">doctor@example.com</a></p>
+                </div>
+                <!-- Add more doctor cards -->
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-card">
+                <h1>Explore</h1>
+                <ul>
+                    <li><a href="../SERVICES/services.html">Services</a> </li>
+                    <li><a href="../PRICING/Pricing.html">Pricing</a></li>
+                    <li><a href="../FAQ/faq.html">FAQ</a></li>
+                </ul>
+
+            </div>
+            <div class="footer-card">
+                <h1>LEGAL LINKS</h1>
+                <ul>
+                    <li><a href="../LEGAL_LINKS/Privacy.html">Privacy Policy</a> </li>
+                    <li><a href="../LEGAL_LINKS/tc.html">Terms & Conditions</a></li>
+                    <li><a href="../LEGAL_LINKS/cookie.html">Cookie Policy</a></li>
+                </ul>
+
+            </div>
+            <div class="footer-card">
+                <a href="../ABOUT_US/about_us.html">
+                    <h1>ABOUT US</h1>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="social-icon">
+
+            <a href="../CONTACT_US/contact.html" target="_blank" title="Contact Us">
+                <span><i class="fab fa-linkedin-in"></i></span>
+            </a>
+            <a href="../CONTACT_US/contact.html" target="_blank" title="Contact Us">
+                <span><i class="fab fa-twitter"></i></span>
+            </a>
+            <a href="../CONTACT_US/contact.html" target="_blank" title="Contact Us">
+                <span><i class="fab fa-instagram"></i></span>
+            </a>
+            <a href="../CONTACT_US/contact.html" target="_blank" title="Contact Us">
+                <span><i class="fab fa-discord"></i></span>
+            </a>
+
+        </div>
+
+
+        <div class="copyright">
+            <p><i>© 2025 FITMED GUIDE. All Rights Reserved.</i></p>
+        </div>
+
+
+
+
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
